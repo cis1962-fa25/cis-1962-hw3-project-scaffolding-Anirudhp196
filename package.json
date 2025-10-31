@@ -1,0 +1,19 @@
+{
+  "name": "cis-1962-hw3-project-scaffolding-anirudhp196",
+  "version": "1.0.0",
+  "description": "In this assignment you'll be developing a pizza validation package. By the end, you should be able to pass in a JSON file into a command-line interface (CLI) and judge whether that object is a valid pizza or not.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cis1962-fa25/cis-1962-hw3-project-scaffolding-Anirudhp196.git"
+  },
+  "author": "Anirudh Pasupathy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cis1962-fa25/cis-1962-hw3-project-scaffolding-Anirudhp196/issues"
+  },
+  "homepage": "https://github.com/cis1962-fa25/cis-1962-hw3-project-scaffolding-Anirudhp196#readme"
+}
