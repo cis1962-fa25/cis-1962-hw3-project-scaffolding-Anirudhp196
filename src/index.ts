@@ -1,10 +1,10 @@
 import { z } from "zod";
 
-
 const forbiddenToppings = ["fish", "nuts", "anchovies", "pickes"];
 
 const pizzaSchema = z.object({
-    size: z.number().min(6, "Size must be at least 6 inches").max(24, "Size can be at most 24 inches"),
+    size: z.number().min(6, "Size must be at least 6 inches").max(24, "Size can be at most 24 inches")
+    .refine(val => Number.isInteger(val),{message: "size is required"}),
     crust: z.enum(["stuffed", "normal"]),
     isDeepDish: z.boolean().optional().default(false),
     toppings: z.array(z.string().optional().refine(topping => !forbiddenToppings.includes(topping || ""), {

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "In this assignment you'll be developing a pizza validation package. By the end, you should be able to pass in a JSON file into a command-line interface (CLI) and judge whether that object is a valid pizza or not.",
   "main": "index.js",
+  "bin": {
+    "pizza-validator": "./dist/src/cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",

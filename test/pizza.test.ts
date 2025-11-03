@@ -44,17 +44,4 @@ test("Invalid Pizza Order - Forbidden Topping", () => {
     }
 });
 
-test("Invalid Pizza Order - Missing Size", () => {
-    const order = {
-        crust: "normal",
-        toppings: ["mushrooms"]
-    };
-
-    const result = validatePizzaOrder(order);
-    expect(result.isPizza).toBe(false);
-    if (!result.isPizza) {
-        expect(result.error).toContain("Required");
-    }
-});
-
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {validatePizzaOrder} from "./index"
 import {argv} from "process";
 import {readFileSync} from "fs";
