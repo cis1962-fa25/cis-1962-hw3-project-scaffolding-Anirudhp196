@@ -31,9 +31,9 @@ const result = validatePizzaOrder({
 });
 
 if (result.isPizza) {
-  console.log("✅ Valid pizza:", result.pizza);
+  console.log("Valid pizza:", result.pizza);
 } else {
-  console.error("❌ Invalid pizza:", result.error);
+  console.error("Invalid pizza:", result.error);
 }
 
 
